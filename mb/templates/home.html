@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            h1, li {
+                color: red;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tigmi</h1>
+        <ul>
+            {% for post in all_posts_list %}
+            <li>{{ post.text }}</li>
+            {% endfor %}
+        </ul>
+        {% comment %} <h2>href="{% url 'home_page' %}"</h2> {% endcomment %}
+    </body>
+</html>

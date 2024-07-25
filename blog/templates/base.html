@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+    <head>
+        <title>MaBlog</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="nav-left">
+                <a href="{% url 'home' %}">MaBlog</a>
+            </div>
+            <div class="nav-right">
+                <a href="{% url 'post_new' %}">+ NewBlog</a>
+            </div>
+        </header>
+        {% block content%}
+        {% endblock content%}
+    </body>
+</html>
